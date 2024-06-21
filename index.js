@@ -31,7 +31,7 @@ app.use(
   cors({ origin: "https://blog-durgesh.netlify.app/", credentials: true })
 ); // { origin: "http://localhost:5173", credentials: true }
 app.use(cookieParser());
-app.use("/api/auth", authRoute);
+app.use("/", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
